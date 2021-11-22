@@ -10,15 +10,10 @@ import java.util.List;
 
 @Data
 public class CreateUserRequest {
-    @Id
-    private Long id;
     @NotEmpty
     private String firstname;
     @NotEmpty
     private String lastname;
     @NotEmpty
     private String passport;
-    @OneToMany(mappedBy = "user")
-    private List<Ticket> tickets;
-    private boolean isDeleted;
 }

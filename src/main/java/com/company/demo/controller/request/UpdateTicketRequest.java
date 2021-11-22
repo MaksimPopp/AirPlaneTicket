@@ -10,10 +10,7 @@ import java.math.BigDecimal;
 
 @Data
 public class UpdateTicketRequest {
-    @ManyToOne
-    private Plane plane;
-    @ManyToOne
-    private User user;
-    @NotEmpty
+    private Long planeId;
+    private Long userId;
     private BigDecimal price;
 }

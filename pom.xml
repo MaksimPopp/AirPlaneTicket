@@ -35,6 +35,13 @@
 			<artifactId>hibernate-validator</artifactId>
 			<version>7.0.0.Final</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/ma.glasnost.orika/orika-core -->
+		<dependency>
+			<groupId>ma.glasnost.orika</groupId>
+			<artifactId>orika-core</artifactId>
+			<version>1.5.4</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>

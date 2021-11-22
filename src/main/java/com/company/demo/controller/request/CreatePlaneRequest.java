@@ -16,8 +16,6 @@ import java.util.List;
 
 @Data
 public class CreatePlaneRequest {
-    @Id
-    private Long id;
     @NotEmpty
     private String name;
     @NotEmpty
@@ -28,8 +26,4 @@ public class CreatePlaneRequest {
     private String departFrom;
     @NotEmpty
     private String arriveTo;
-    @OneToMany(mappedBy = "plane")
-    private List<Ticket> tickets;
-    private boolean isDeleted;
-
 }
